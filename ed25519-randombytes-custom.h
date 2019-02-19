@@ -6,3 +6,10 @@
 	ed25519_randombytes_unsafe is used by the batch verification function
 	to create random scalars
 */
+
+#include <sodium.h>
+
+void
+ED25519_FN(ed25519_randombytes_unsafe) (void *p, size_t len) {
+  randombytes_buf(p, len);
+}
