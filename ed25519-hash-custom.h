@@ -9,7 +9,7 @@
 	void ed25519_hash(uint8_t *hash, const uint8_t *in, size_t inlen);
 */
 
-#include <sodium.h>
+#include <sodium/crypto_hash_sha512.h>
 
 typedef crypto_hash_sha512_state ed25519_hash_context;
 
